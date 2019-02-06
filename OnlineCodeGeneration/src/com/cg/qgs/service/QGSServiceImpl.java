@@ -9,6 +9,7 @@ import com.cg.qgs.dao.QGSDaoImpl;
 import com.cg.qgs.exception.QGSException;
 import com.cg.qgs.model.Accounts;
 import com.cg.qgs.model.BusinessSegment;
+import com.cg.qgs.model.PolicyQuestions;
 
 public class QGSServiceImpl implements QGSService {
 	QGSDao dao = new QGSDaoImpl(); 
@@ -57,5 +58,22 @@ public class QGSServiceImpl implements QGSService {
 		
 		return dao.viewBusinessSegment();
 	}
+
+	@Override
+	public boolean checkingAccount(Long accountNumber) throws QGSException {
+		// TODO Auto-generated method stub
+		return dao.checkingAccount(accountNumber);
+	}
+
+	@Override
+	public List<PolicyQuestions> viewPolicyDetails(String business_segment)
+			throws QGSException {
+		// TODO Auto-generated method stub
+		return dao.viewPolicyDetails(business_segment);
+	}
+
+
+
+	
 
 }

@@ -1,6 +1,5 @@
 package com.cg.qgs.client;
 
-import java.security.Provider.Service;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
@@ -14,18 +13,19 @@ import com.cg.qgs.service.QGSService;
 import com.cg.qgs.service.QGSServiceImpl;
 
 public class MainUI {
+	static QGSService service = null;
+	static Scanner scanner = null;
+	static Accounts accounts = null;
+	static PolicyQuestions policy = null;
 
 	public static void main(String[] args) {
 
-		Scanner scan = null;
-		Accounts accounts = null;
-		PolicyQuestions policy = null;
 		int choice;
 		boolean flag = false;
-		QGSService service = null;
+
 		try {
 			do {
-				scan = new Scanner(System.in);
+				scanner = new Scanner(System.in);
 				System.out.println("***********Agent*************");
 				System.out.println("1.Account Creation");
 				System.out.println("2.Policy Creation");
@@ -34,12 +34,12 @@ public class MainUI {
 
 				System.out.println("Enter your choice");
 
-				choice = scan.nextInt();
+				choice = scanner.nextInt();
 
 				switch (choice) {
 				case 1:
 					System.out.println("\n==== Account Creation Screen ====");
-					scan.nextLine();
+					scanner.nextLine();
 					accounts = getAccountCreation();
 					boolean validateflag = false;
 					service = new QGSServiceImpl();
@@ -57,15 +57,17 @@ public class MainUI {
 						e.printStackTrace();
 					}
 					flag = true;
-
+					break;
 				case 2:
-					policy = getPolicyCreation();
-					
-					
+					service = new QGSServiceImpl();
+					getPolicyCreation();
+					break;
 				case 3:
-
+					break;
 				case 4:
-					return;
+
+					break;
+
 				default:
 					System.err.println("Enter a Valid option");
 				}
@@ -77,22 +79,87 @@ public class MainUI {
 
 	}
 
-	private static PolicyQuestions getPolicyCreation() {
+	private static void getPolicyCreation() {
 
-		List<BusinessSegment> list = new ArrayList<BusinessSegment>();
-		QGSService service = new QGSServiceImpl();
+		double policyPremium = 0.0;
+		String policyNumber = null;
+		BusinessSegment businessSegment2 = new BusinessSegment();
+		System.out.println("Enter Account No: ");
+		Long accountNumber = scanner.nextLong();
 		try {
-			list=service.viewBusinessSegment();
-			
-		} catch (QGSException e) {
+			boolean result = service.checkingAccount(accountNumber);
+			if (result) {
+				List<BusinessSegment> list = new ArrayList<BusinessSegment>();
+				List<PolicyQuestions> list2 = new ArrayList<PolicyQuestions>();
+				QGSService service = new QGSServiceImpl();
+				try {
+					list = service.viewBusinessSegment();
+					if (list.size() > 0) {
+						System.out.println("\nBusiness Segment Name:\n");
+						int choice = 1;
+						for (BusinessSegment businessSegment : list) {
+							System.out.println(choice++ + ". "
+									+ businessSegment.getBusSegName());
+
+							businessSegment2.setBusSegId(businessSegment
+									.getBusSegId());
+							businessSegment2.setBusSegName(businessSegment
+									.getBusSegName());
+
+						}
+						System.out.println("please select policy");
+						int choices = scanner.nextInt();
+						String business_segment = null;
+						switch (choices) {
+						case 1:
+							business_segment = "Business Auto";
+							break;
+							
+						case 2:
+							business_segment = "Restaurant";
+							break;
+							
+						case 3:
+							business_segment = "Apartment";
+							break;
+							
+						case 4:
+							business_segment = "General Merchant";
+							break;
+
+						default:
+							break;
+						}
+						list2 = service.viewPolicyDetails(business_segment);
+					
+						int i=1;
+						for (PolicyQuestions policyQuestions : list2) {
+							System.out.println("Question " + i + ": " + policyQuestions.getQuestion() + "\n 1: "
+									+ policyQuestions.getPolQuesAns1() + "\n 2: " + policyQuestions.getPolQuesAns2() + "\n 3: "
+									+ policyQuestions.getPolQuesAns3() + "\n Enter your option :\n");
+							i++;
+							int choice1 = scanner.nextInt();
+							
+						}
+					} else {
+						System.out.println("No records found");
+					}
+
+				} catch (QGSException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			} else {
+				System.err.println("Account number doesn't exists");
+			}
+		} catch (QGSException e1) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			e1.printStackTrace();
 		}
-		return null;
+
 	}
 
 	private static Accounts getAccountCreation() {
-		Scanner scanner = new Scanner(System.in);
 
 		Accounts accounts = new Accounts();
 		System.out.println("Enter Insured Name : ");

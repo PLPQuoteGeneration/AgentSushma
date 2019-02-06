@@ -1,8 +1,15 @@
 package com.cg.qgs.model;
 
 public class PolicyQuestions {
-
+	
+	
+	
+	private Long accountNumber;
+	private int buisnessSegement;
+	private Double policyPremium;
+	private long policyNumber;
 	private String polQuesId;
+	private String question;
 	private Integer polQuesSeq;
 	private String polQuesDesc;
 	private String polQuesAns1;
@@ -18,14 +25,21 @@ public class PolicyQuestions {
 		// TODO Auto-generated constructor stub
 	}
 
-	public PolicyQuestions(String polQuesId, Integer polQuesSeq,
-			String polQuesDesc, String polQuesAns1,
-			Integer polQuesAns1Weightage, String polQuesAns2,
-			Integer polQuesAns2Weightage, String polQuesAns3,
-			Integer polQuesAns3Weightage, String polQuesAns4,
-			Integer polQuesAns4Weightage) {
+	
+	public PolicyQuestions(Long accountNumber, int buisnessSegement,
+			Double policyPremium, long policyNumber, String polQuesId,
+			String question, Integer polQuesSeq, String polQuesDesc,
+			String polQuesAns1, Integer polQuesAns1Weightage,
+			String polQuesAns2, Integer polQuesAns2Weightage,
+			String polQuesAns3, Integer polQuesAns3Weightage,
+			String polQuesAns4, Integer polQuesAns4Weightage) {
 		super();
+		this.accountNumber = accountNumber;
+		this.buisnessSegement = buisnessSegement;
+		this.policyPremium = policyPremium;
+		this.policyNumber = policyNumber;
 		this.polQuesId = polQuesId;
+		this.question = question;
 		this.polQuesSeq = polQuesSeq;
 		this.polQuesDesc = polQuesDesc;
 		this.polQuesAns1 = polQuesAns1;
@@ -40,8 +54,11 @@ public class PolicyQuestions {
 
 	@Override
 	public String toString() {
-		return "PolicyQuestions [polQuesId=" + polQuesId + ", polQuesSeq="
-				+ polQuesSeq + ", polQuesDesc=" + polQuesDesc
+		return "PolicyQuestions [accountNumber=" + accountNumber
+				+ ", buisnessSegement=" + buisnessSegement + ", policyPremium="
+				+ policyPremium + ", policyNumber=" + policyNumber
+				+ ", polQuesId=" + polQuesId + ", question=" + question
+				+ ", polQuesSeq=" + polQuesSeq + ", polQuesDesc=" + polQuesDesc
 				+ ", polQuesAns1=" + polQuesAns1 + ", polQuesAns1Weightage="
 				+ polQuesAns1Weightage + ", polQuesAns2=" + polQuesAns2
 				+ ", polQuesAns2Weightage=" + polQuesAns2Weightage
@@ -50,12 +67,53 @@ public class PolicyQuestions {
 				+ ", polQuesAns4Weightage=" + polQuesAns4Weightage + "]";
 	}
 
+
+	public Long getAccountNumber() {
+		return accountNumber;
+	}
+
+	public void setAccountNumber(Long accountNumber) {
+		this.accountNumber = accountNumber;
+	}
+
+	public int getBuisnessSegement() {
+		return buisnessSegement;
+	}
+
+	public void setBuisnessSegement(int buisnessSegement) {
+		this.buisnessSegement = buisnessSegement;
+	}
+
+	public Double getPolicyPremium() {
+		return policyPremium;
+	}
+
+	public void setPolicyPremium(Double policyPremium) {
+		this.policyPremium = policyPremium;
+	}
+
+	public long getPolicyNumber() {
+		return policyNumber;
+	}
+
+	public void setPolicyNumber(long policyNumber) {
+		this.policyNumber = policyNumber;
+	}
+
 	public String getPolQuesId() {
 		return polQuesId;
 	}
 
 	public void setPolQuesId(String polQuesId) {
 		this.polQuesId = polQuesId;
+	}
+
+	public String getQuestion() {
+		return question;
+	}
+
+	public void setQuestion(String question) {
+		this.question = question;
 	}
 
 	public Integer getPolQuesSeq() {
@@ -137,5 +195,6 @@ public class PolicyQuestions {
 	public void setPolQuesAns4Weightage(Integer polQuesAns4Weightage) {
 		this.polQuesAns4Weightage = polQuesAns4Weightage;
 	}
+
 
 }

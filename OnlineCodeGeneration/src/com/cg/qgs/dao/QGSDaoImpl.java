@@ -4,13 +4,15 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.management.Query;
 
 import com.cg.qgs.exception.QGSException;
 import com.cg.qgs.model.Accounts;
 import com.cg.qgs.model.BusinessSegment;
+import com.cg.qgs.model.PolicyQuestions;
 import com.cg.qgs.utility.JdbcUtility;
 
 public class QGSDaoImpl implements QGSDao {
@@ -70,8 +72,76 @@ public class QGSDaoImpl implements QGSDao {
 					.prepareStatement(QueryMapper.viewBusinessSegment);
 			resultset = preparestatement.executeQuery();
 			while (resultset.next()) {
-				
+				String busSegName = resultset.getString("BUS_SEG_NAME");
+				BusinessSegment businessSegment = new BusinessSegment();
+				businessSegment.setBusSegName(busSegName);
+				list.add(businessSegment);
 			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return list;
+	}
+
+	@Override
+	public boolean checkingAccount(Long accountNumber) throws QGSException {
+		connection = JdbcUtility.getConnection();
+		boolean flag = false;
+		try {
+			preparestatement = connection
+					.prepareStatement(QueryMapper.displayAccountNo);
+			resultset = preparestatement.executeQuery();
+
+			while (resultset.next()) {
+				if (resultset.getLong("account_number") == accountNumber) {
+					flag = true;
+				}
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return flag;
+	}
+
+	@Override
+	public List<PolicyQuestions> viewPolicyDetails(String business_segment)
+			throws QGSException {
+		connection = JdbcUtility.getConnection();
+		List<PolicyQuestions> list = null;
+		try {
+			preparestatement = connection
+					.prepareStatement(QueryMapper.viewPolicyDetails);
+			preparestatement.setString(1, business_segment );
+			resultset = preparestatement.executeQuery();
+
+			list = new ArrayList<>();
+			while (resultset.next()) {
+
+				String policyQuestId = resultset.getString(1);
+				String question = resultset.getString(4);
+				String answerOne = resultset.getString(5);
+				int answerOneWeight = resultset.getInt(6);
+				String answerTwo = resultset.getString(7);
+				int answerTwoWeight = resultset.getInt(8);
+				String answerThree = resultset.getString(9);
+				int answerThreeWeight = resultset.getInt(10);
+
+				PolicyQuestions policyquestions = new PolicyQuestions();
+				//policyquestions.setBuisnessSegement("Business Auto");
+				policyquestions.setPolQuesId(policyQuestId);
+				policyquestions.setQuestion(question);
+				policyquestions.setPolQuesAns1(answerOne);
+				policyquestions.setPolQuesAns2(answerTwo);
+				policyquestions.setPolQuesAns3(answerThree);
+				policyquestions.setPolQuesAns1Weightage(answerOneWeight);
+				policyquestions.setPolQuesAns2Weightage(answerTwoWeight);
+				policyquestions.setPolQuesAns3Weightage(answerThreeWeight);
+
+				list.add(policyquestions);
+			}
+
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
