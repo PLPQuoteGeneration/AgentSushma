@@ -1,0 +1,108 @@
+2019-02-09-main-DEBUG-com.cg.qgs.client.Index1:Inside If..Else block 1
+2019-02-09-main-DEBUG-com.cg.qgs.client.Index1:Inside Admin Do..While loop 1
+2019-02-09-main-INFO -com.cg.qgs.client.Index1:Inside 1st try block in admin
+2019-02-09-main-DEBUG-com.cg.qgs.client.Index1:Inside Admin If block 1
+2019-02-09-main-INFO -com.cg.qgs.client.Index1:Inside Switch Case 3
+2019-02-09-main-DEBUG-com.cg.qgs.client.Index1:Inside Policy Creation Do..While loop 1
+2019-02-09-main-INFO -com.cg.qgs.client.Index1:Inside Policy Creation 1st try block
+2019-02-09-main-DEBUG-com.cg.qgs.client.Index1:Inside If..Else block 1
+2019-02-09-main-DEBUG-com.cg.qgs.client.Index1:Inside Admin Do..While loop 1
+2019-02-09-main-INFO -com.cg.qgs.client.Index1:Inside 1st try block in admin
+2019-02-09-main-DEBUG-com.cg.qgs.client.Index1:Inside Admin If block 1
+2019-02-09-main-INFO -com.cg.qgs.client.Index1:Inside Switch Case 1
+2019-02-09-main-DEBUG-com.cg.qgs.client.Index1:Inside Do..While loop 1
+2019-02-09-main-DEBUG-com.cg.qgs.client.Index1:Inside If..Else block 1
+2019-02-09-main-DEBUG-com.cg.qgs.client.Index1:Inside Admin Do..While loop 1
+2019-02-09-main-INFO -com.cg.qgs.client.Index1:Inside 1st try block in admin
+2019-02-09-main-DEBUG-com.cg.qgs.client.Index1:Inside Admin If block 1
+2019-02-09-main-INFO -com.cg.qgs.client.Index1:Inside Switch Case 3
+2019-02-09-main-DEBUG-com.cg.qgs.client.Index1:Inside Policy Creation Do..While loop 1
+2019-02-09-main-INFO -com.cg.qgs.client.Index1:Inside Policy Creation 1st try block
+2019-02-09-main-DEBUG-com.cg.qgs.client.Index1:Inside Policy Creation If block 1
+2019-02-09-main-DEBUG-com.cg.qgs.client.Index1:Inside Do..While loop 1
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Else block 1
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Do..While loop 3
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Do..While loop 4
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside If block 3
+2019-02-11-main-INFO -com.cg.qgs.client.Index1:Inside Switch Case 1
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Do..While loop 3
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Do..While loop 4
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside If block 3
+2019-02-11-main-INFO -com.cg.qgs.client.Index1:Inside Switch Case 2
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Else block 1
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Do..While loop 3
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Do..While loop 4
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside If block 3
+2019-02-11-main-INFO -com.cg.qgs.client.Index1:Inside Switch Case 2
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside If..Else block 1
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Admin Do..While loop 1
+2019-02-11-main-INFO -com.cg.qgs.client.Index1:Inside 1st try block in admin
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Admin If block 1
+2019-02-11-main-INFO -com.cg.qgs.client.Index1:Inside Switch Case 3
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Policy Creation Do..While loop 1
+2019-02-11-main-INFO -com.cg.qgs.client.Index1:Inside Policy Creation 1st try block
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Policy Creation else block 1
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Policy Creation Do..While loop 1
+2019-02-11-main-INFO -com.cg.qgs.client.Index1:Inside Policy Creation 1st try block
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside If..Else block 1
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Admin Do..While loop 1
+2019-02-11-main-INFO -com.cg.qgs.client.Index1:Inside 1st try block in admin
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Admin If block 1
+2019-02-11-main-INFO -com.cg.qgs.client.Index1:Inside Switch Case 1
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Do..While loop 1
+2019-02-11-main-INFO -com.cg.qgs.client.Index1:Inside 1st try block
+2019-02-11-main-INFO -com.cg.qgs.client.Index1:Inside Switch Case 1
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Admin Do..While loop 1
+2019-02-11-main-INFO -com.cg.qgs.client.Index1:Inside 1st try block in admin
+2019-02-11-main-ERROR-com.cg.qgs.client.Index1:
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Admin Do..While loop 1
+2019-02-11-main-INFO -com.cg.qgs.client.Index1:Inside 1st try block in admin
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Admin else block 1
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Admin Do..While loop 1
+2019-02-11-main-INFO -com.cg.qgs.client.Index1:Inside 1st try block in admin
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Admin If block 1
+2019-02-11-main-INFO -com.cg.qgs.client.Index1:Inside Switch Case 2
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Do..While loop 1
+2019-02-11-main-INFO -com.cg.qgs.client.Index1:Inside 1st try block
+2019-02-11-main-INFO -com.cg.qgs.client.Index1:Inside Switch Case 2
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside If..Else block 1
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Admin Do..While loop 1
+2019-02-11-main-INFO -com.cg.qgs.client.Index1:Inside 1st try block in admin
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Admin If block 1
+2019-02-11-main-INFO -com.cg.qgs.client.Index1:Inside Switch Case 3
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Policy Creation Do..While loop 1
+2019-02-11-main-INFO -com.cg.qgs.client.Index1:Inside Policy Creation 1st try block
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Policy Creation else block 1
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Policy Creation Do..While loop 1
+2019-02-11-main-INFO -com.cg.qgs.client.Index1:Inside Policy Creation 1st try block
+2019-02-11-main-ERROR-com.cg.qgs.client.Index1:
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Policy Creation Do..While loop 1
+2019-02-11-main-INFO -com.cg.qgs.client.Index1:Inside Policy Creation 1st try block
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Policy Creation If block 1
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside If..Else block 1
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Admin Do..While loop 1
+2019-02-11-main-INFO -com.cg.qgs.client.Index1:Inside 1st try block in admin
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Admin If block 1
+2019-02-11-main-INFO -com.cg.qgs.client.Index1:Inside Switch Case 3
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Policy Creation Do..While loop 1
+2019-02-11-main-INFO -com.cg.qgs.client.Index1:Inside Policy Creation 1st try block
+2019-02-11-main-ERROR-com.cg.qgs.client.Index1:
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Policy Creation Do..While loop 1
+2019-02-11-main-INFO -com.cg.qgs.client.Index1:Inside Policy Creation 1st try block
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Policy Creation else block 1
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Policy Creation Do..While loop 1
+2019-02-11-main-INFO -com.cg.qgs.client.Index1:Inside Policy Creation 1st try block
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Policy Creation If block 1
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside If..Else block 1
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Admin Do..While loop 1
+2019-02-11-main-INFO -com.cg.qgs.client.Index1:Inside 1st try block in admin
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Admin If block 1
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Else..If block 1
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Do..While loop 2
+2019-02-11-main-INFO -com.cg.qgs.client.Index1:Inside 2st try block
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside If block 2
+2019-02-11-main-INFO -com.cg.qgs.client.Index1:Inside Switch Case 1
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside Do..While loop 2
+2019-02-11-main-INFO -com.cg.qgs.client.Index1:Inside 2st try block
+2019-02-11-main-DEBUG-com.cg.qgs.client.Index1:Inside If block 2
+2019-02-11-main-INFO -com.cg.qgs.client.Index1:Inside Switch Case 2
